@@ -1,0 +1,2 @@
+cal
+read -rsn1

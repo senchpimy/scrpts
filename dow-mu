@@ -1,0 +1,7 @@
+#!/usr/bin/python
+import os
+import time
+while True:
+    video=input("Cancion:")
+    os.system(f"youtube-dl -x --audio-format mp3 {video}")
+    time.sleep(5)
