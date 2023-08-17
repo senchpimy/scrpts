@@ -76,7 +76,7 @@ int main(int argc, char *argv[])
     {"", "models/LyCORIS"},
     // adetailer
   };
-  int total_categories = 18;
+  int total_categories = 19;
   struct stat sb;
 
   for (int i = 0; i<total_categories ; i++) {
