@@ -43,7 +43,8 @@ int main(int argc, char *argv[])
  "unet",
  "upscale_models",
  "vae",
- "vae_approx"
+ "vae_approx",
+ "lycoris",
   //"adetailer"
   };
 
@@ -72,6 +73,7 @@ int main(int argc, char *argv[])
     {"upscale_models", "models/RealESRGAN"},
     {"vae", "models/VAE"},
     {"vae_approx", "models/VAE-approx"},
+    {"", "models/LyCORIS"},
     // adetailer
   };
   int total_categories = 18;
