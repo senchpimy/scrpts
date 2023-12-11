@@ -32,19 +32,21 @@ int main(int argc, char *argv[])
  "controlnet",
  "diffusers",
  "embeddings",
+ "ESRGAN",
+ "GFPGAN",
  "gligen",
  "hypernetworks",
  "loras",
+ "lycoris",
  "mmdets",
  "onnx",
  "sams",
  "style_models",
  "ultralytics",
  "unet",
- "upscale_models",
+ "RealESRGAN",
  "vae",
  "vae_approx",
- "lycoris",
   //"adetailer"
   };
 
@@ -60,10 +62,13 @@ int main(int argc, char *argv[])
     {"clip_vision"},
     {"controlnet","models/ControlNet"},
     {"diffusers"},
+    {"upscale_models", "ESRGAN"},
+    {""}, //GFPGAN
     {"embeddings", "embeddings"},
     {"gligens"},
     {"hypernetworks", "models/hypernetworks"},
     {"loras", "models/Lora"},
+    {"", "models/LyCORIS"},
     {"mmdets"},
     {"onnx"},
     {"sams"},
@@ -73,10 +78,9 @@ int main(int argc, char *argv[])
     {"upscale_models", "models/RealESRGAN"},
     {"vae", "models/VAE"},
     {"vae_approx", "models/VAE-approx"},
-    {"", "models/LyCORIS"},
     // adetailer
   };
-  int total_categories = 19;
+  int total_categories = 21;
   struct stat sb;
 
   for (int i = 0; i<total_categories ; i++) {
